@@ -24,9 +24,17 @@ button {
   font-size: 1.2em;
   cursor: pointer;
 }
+button:disabled {
+  background: rgba(255, 255, 255, 0.55);
+  cursor: default;
+}
 button:hover {
   color: #fff;
   border-color: #fff;
+}
+button:disabled:hover {
+  color: #ccc;
+  border-color: #ccc;
 }
 .content {
   text-align: left;
